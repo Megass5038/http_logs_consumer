@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "http_logs_consumer"
+version = "0.1.0"
+description = ""
+authors = ["Vladimir <megass5038@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+loguru = "^0.5.3"
+python-dotenv = "^0.15.0"
+aioredis = "^1.3.1"
+pytest-asyncio = "^0.14.0"
+
+[tool.poetry.dev-dependencies]
+black = "^20.8b1"
+
+[tool.black]
+line-length = 99
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '/(\.eggs|\.git|\.venv|\.scrapy)/'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
